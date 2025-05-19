@@ -689,13 +689,13 @@ Prometheus is a powerful monitoring and alerting toolkit, and you'll use it to m
 
 Install Helm on the netflix server:
 
-      ```
+      
       curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
       sudo apt-get install apt-transport-https --yes
       echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
       sudo apt-get update
       sudo apt-get install helm
-      ```
+      
 
 To begin monitoring your Kubernetes cluster, you'll install the Prometheus Node Exporter. This component allows you to collect system-level metrics from your cluster nodes. Here are the steps to install the Node Exporter using Helm:
 
