@@ -53,9 +53,6 @@
     docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
     docker run -d --name netflix -p 8081:80 netflix:latest
     
-    #to delete
-    docker stop <containerid>
-    docker rmi -f netflix
     ```
 
 It will show an error cause you need API key
